@@ -84,11 +84,33 @@ header {
     .secondary-info {
         position: fixed;
         bottom: 3em;
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 1400px) and (max-height: 768px) {
+    .banner-text {
+        font-size: 1.5em;
+        margin-top: 50px;
+    }
+    
+    .pagination.vertical span:first-child {
+        margin-top: 50px;
+    }
+
+    .pagination.horizontal {
+        display: none;
     }
 }
 
 @media only screen and (max-width: 450px) and (max-height: 850px) {
     body {
         background-position: -65em;
+    }
+}
+
+@media only screen and (orientation: landscape) {
+    .pagination.horizontal {
+        display: none;
     }
 }
