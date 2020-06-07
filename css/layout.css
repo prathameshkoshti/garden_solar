@@ -113,4 +113,8 @@ header {
     .pagination.horizontal {
         display: none;
     }
+
+    body {
+        background-position: -5em -7em;
+    }
 }
