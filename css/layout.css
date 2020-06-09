@@ -4,6 +4,7 @@ body {
     background: url('../assets/bg.png') no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    overflow-x: hidden;
 }
 
 .container {
@@ -86,6 +87,10 @@ footer .social-links > * {
     position: absolute;
     bottom: 1em;
     right: 0;
+}
+
+.show-991 {
+    display: none;
 }
 
 @media only screen and (max-width: 991px) {
