@@ -132,10 +132,6 @@ footer .social-links > * {
         width: calc(100% - 12px);
     }
 
-    .desc {
-        margin-top: 10vh;
-    }
-
     .secondary-info {
         position: relative;
         margin-top: 40vh;
