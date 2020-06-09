@@ -1,20 +1,21 @@
 body {
-    height: 100vh;
+    min-height: 100vh;
     width: 100vw;
     background: url('../assets/bg.png') no-repeat;
     background-size: cover;
-    overflow: hidden;
+    background-attachment: fixed;
 }
 
 .container {
     width: 100%;
+    overflow-x: hidden;
 }
 
 .grid {
     width: 100%;
     display: grid;
     grid-template-columns: calc(100vw - 100px) 100px;
-    grid-template-rows: 100px calc(100vh - 100px);
+    grid-template-rows: 100px 1fr;
 }
 
 header {
@@ -38,6 +39,54 @@ header {
 .main-content {
     margin-left: 5em;
 }
+
+footer {
+    background-color: var(--black);
+    margin-left: 0;
+    position: absolute;
+    left: -2.7em;
+    bottom: -4em;
+    padding: 1em;
+}
+
+footer .social-links {
+    transform: rotate(0deg);
+    position: relative;
+    bottom: 0;
+    right: 0;
+    background-color: var(--black);
+    height: 100%;
+} 
+
+footer .social-links > * {
+    margin-right: 20px;
+}
+
+.show-991.address {
+    position: relative;
+    bottom: 0;
+    right: 0;
+    margin-top: 2em;
+}
+
+.developed-by.show-991 {
+    position: relative;
+    text-align: center;
+    background-color: rgba(0,0,0,0.6);
+    margin-top: 3em;
+    padding: 2em 0;
+}
+
+.developed-by.show-991 .builder-icon {
+    margin-left: 0;
+}
+
+.whatsapp.show-991 {
+    position: absolute;
+    bottom: 1em;
+    right: 0;
+}
+
 @media only screen and (max-width: 991px) {
     body {
         background-position: -50em;
@@ -82,16 +131,16 @@ header {
     }
 
     .secondary-info {
-        position: fixed;
-        bottom: 3em;
-        width: 90%;
+        position: relative;
+        margin-top: 40vh;
+        width: 100%;
     }
 }
 
 @media only screen and (max-width: 1400px) and (max-height: 768px) {
     .banner-text {
         font-size: 1.5em;
-        margin-top: 50px;
+        margin-top: 30px;
     }
     
     .pagination.vertical span:first-child {
@@ -129,7 +178,7 @@ header {
     }
 
     .secondary-info {
-        width: 87%;
+        width: 100%;
     }
 
     .desc p {

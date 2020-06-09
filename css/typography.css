@@ -28,3 +28,7 @@ a.link{
 a.link.footer-link {
     text-decoration: none;
 }
+
+strong {
+    font-weight: 600;
+}
