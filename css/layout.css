@@ -58,6 +58,7 @@ footer .social-links {
     right: 0;
     background-color: var(--black);
     height: 100%;
+    justify-content: center;
 } 
 
 footer .social-links > * {
